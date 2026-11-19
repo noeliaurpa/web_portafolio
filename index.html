@@ -1,679 +1,436 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Portafolio web Noelia Urpi" />
-        <meta name="author" content="Noelia Urpi Paniagua" />
-        <title>Noelia Urpi Paniagua | Portafolio web</title>
-        <!-- Icono de Página-->
-        <link rel="icon" type="image/x-icon" href="assets/img/analisis.png" />
-        
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noelia Urpi Paniagua | Ingeniera de Datos</title>
+  <meta name="description" content="Noelia Urpi Paniagua, Ingeniera de Datos en Costa Rica: ETL en Microsoft Fabric, SQL, Python/PySpark, Power BI y machine learning. Data Engineer portfolio." />
+  <meta name="author" content="Noelia Urpi Paniagua" />
+  <meta property="og:title" content="Noelia Urpi Paniagua | Data Engineer" />
+  <meta property="og:description" content="Ingeniera de Datos · ETL, Microsoft Fabric, SQL, PySpark, Power BI y machine learning." />
+  <meta property="og:image" content="assets/img/Noelia Urpi.png" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%232b1736'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='24' fill='%23f3c6d3'%3ENU%3C/text%3E%3C/svg%3E" />
+  <link rel="preload" href="assets/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="css/site.css" />
+  <!-- Icons: Font Awesome Free (CC BY 4.0), inlined as SVG -->
+</head>
+<body>
+  <a class="skip" href="#main"><span data-l="es">Ir al contenido</span><span data-l="en">Skip to content</span></a>
 
-        <!-- Libraries Stylesheet -->
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a class="monogram" href="#top" aria-label="Noelia Urpi Paniagua">NU</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span data-l="es">Menú</span><span data-l="en">Menu</span>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#sobre-mi"><span data-l="es">Sobre mí</span><span data-l="en">About</span></a></li>
+        <li><a href="#experiencia"><span data-l="es">Experiencia</span><span data-l="en">Experience</span></a></li>
+        <li><a href="#proyectos"><span data-l="es">Proyectos</span><span data-l="en">Projects</span></a></li>
+        <li><a href="#habilidades"><span data-l="es">Habilidades</span><span data-l="en">Skills</span></a></li>
+        <li><a href="#contacto"><span data-l="es">Contacto</span><span data-l="en">Contact</span></a></li>
+      </ul>
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button type="button" data-set-lang="es" aria-pressed="true">ES</button>
+        <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
 
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-
-        <!-- Navegación-->
-        <nav class="navbar navbar-expand-lg text-uppercase fixed-top" style="background-color: #219ebc;"  id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top">Noelia Urpi Paniagua</a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-secundary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About Me</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#resume">Resume</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#skills">Skills</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Projects</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact Me</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-
-        <!-- Parte Principal-->
-        <header class="masthead text-white text-center"  style="background-color: #023047;min-height:100vh">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Imagen principal-->
-                <img class="masthead-avatar mb-5 rounded-circle" src="assets\img\Noelia Urpi.png" alt="..." />
-                <!-- Titulo-->
-                <h1 class="masthead-heading text-uppercase mb-0">Noelia Urpi Paniagua</h1>
-                <!-- Iconos que dividen-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fa-solid fa-circle-user"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Subtitulo-->
-                <div class="" style="font-size:50px;">
-                    <h1 class="typed-text-output text-uppercase d-inline font-weight-lighter text-white"></h1>
-                    <div class="typed-text d-none">Software Engineer, Data analyst</div>
-                </div>
-                
-                
-            </div>
-        </header>
-         <!-- Parte Principal-->
-
-
-        
-
-        <!--SOBRE MI-->
-        <div class="page-section container-fluid mb-5"  id="about">
-            <div class="container">
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">About Me</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-lg-5 pb-4 pb-lg-0">
-                        <img class="img-fluid rounded w-100" src="assets\img\Noelia Urpi.png" alt="">
-                    </div>
-                    <div class="col-lg-7">
-                        <h3 class="mb-4">Software Engineer and Data Analyst</h3>
-                        <p>Detail-oriented professional with experience in software engineering and a strong foundation in SQL, data analysis, and data visualization. 
-                            Proficient in Python (Pandas, NumPy, Matplotlib), SQL databases, and cloud tools like AWS and Snowflake. 
-                            Passionate about transforming raw data into actionable insights. <br>
-                            Strong analytical, teamwork, and fast-learning skills, currently transitioning into a full-time Data Analyst role.</p>
-                        <div class="row mb-3">
-                            <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Noelia Urpi</span></h6></div>
-                            <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">14 November 1995</span></h6></div>
-                            <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Engineer</span></h6></div>
-                            <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">08 Years</span></h6></div>
-                            <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+506 89517281</span></h6></div>
-                            <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">noeurpa1114@gmail.com</span></h6></div>
-                            <div class="col-sm-6 py-2"><h6>Country: <span class="text-secondary">Costa Rica</span></h6></div>
-                            <div class="col-sm-6 py-2"><h6>Disponibility: <span class="text-secondary">Remote</span></h6></div>
-                        </div>
-                        <div class="text-center mt-4">
-                            <a class="btn btn-xl btn-outline-dark" target="_blank" href="assets\Data Analyst - Noelia Urpi Paniagua Resume.pdf">
-                                <i class="fas fa-download me-2"></i>
-                                Download resume! 
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--SOBRE MI-->
-
-
-
-
-            <!-- ======= Sección Resumen ======= -->
-        <section id="resume" class="page-section resume">
-            <div class="container">
-        
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">My Resume</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">        
-                        <h3 class="resume-title">Education</h3>
-                        <div class="resume-item">
-                            <h4 style="color: #023047;">Bachelor’s Degree in Software Engineering</h4>
-                            <p><em>Universidad Técnica Nacional, Costa Rica</em></p>
-                        </div>
-                        <div class="resume-item">
-                            <h4 style="color: #023047;">Technician in Telematics and Networking</h4>
-                            <p><em>Cenfotec University, Costa Rica</em></p>
-                        </div>
-                        <div class="resume-item">
-                            <h4 style="color: #023047;">Degree in Technical Education</h4>
-                            <p><em>Centro de Formación Pedagógica y Tecnología Educativa, Costa Rica</em></p>
-                        </div>
-                        <h3 class="resume-title">Certifications & Courses</h3>
-                        <div class="resume-item">
-                            <h4 style="color: #023047;">Python for Data Science and Machine Learning</h4>
-                            <p><em>Grow Up School, Costa Rica</em></p>
-                        </div>
-                        <div class="resume-item">
-                            <h4 style="color: #023047;">Master in Azure Databricks & Spark for Data Engineers [A-Z]</h4>
-                            <p><em>Udemy</em></p>
-                        </div>
-                        <div class="resume-item">
-                            <h4 style="color: #023047;">Complete Power BI Course: Professional Data Analysis</h4>
-                            <p><em>Udemy</em></p>
-                        </div>
-                        <div class="resume-item">
-                            <h4 style="color: #023047;">Databricks and Apache Spark for Big Data: From Zero to Expert</h4>
-                            <p><em>Udemy</em></p>
-                        </div>
-                        <div class="resume-item">
-                            <h4 style="color: #023047;">Tableau from A to Z: Master Tableau in Data Science</h4>
-                            <p><em>Udemy</em></p>
-                        </div>
-                        <div class="resume-item">
-                            <h4 style="color: #023047;">Snowflake Master – Data Warehouse in the Cloud [2025]</h4>
-                            <p><em>Udemy</em></p>
-                        </div>
-                        <div class="resume-item">
-                            <h4 style="color: #023047;">Building E-commerce with .NET & Angular</h4>
-                            <p><em>Udemy</em></p>
-                        </div>
-                        <div class="resume-item">
-                            <h4 style="color: #023047;">Business English (Conversational)</h4>
-                            <p><em>American English for Business</em></p>
-                        </div>
-                        </div>
-                        <div class="col-lg-6">
-                        <h3 class="resume-title">Professional Experience</h3>
-                        <div class="resume-item">
-                            <h4 style="color: #023047;">Data Analyst / Software Engineer</h4>
-                            <h5>Novembre 2022 - Present</h5>
-                            <p><em>Consero Global</em></p>
-                            <p>
-                            <ul>
-                            <li>Analyzed large datasets using complex SQL queries to support business operations.</li>
-                            <li>Performed data validations and created API calls to manipulate production data securely. </li>
-                            <li>Monitored performance and proposed improvements to database structures.</li>
-                            <li>Worked with Postman, Azure, and AWS for data integration tasks.</li>
-                            </ul>
-                            </p>
-                        </div>
-                        <div class="resume-item">
-                            <h4 style="color: #023047;">Full Stack Developer</h4>
-                            <h5>April 2022 - November 2022</h5>
-                            <p><em>Rally Hope</em></p>
-                            <p>
-                            <ul>
-                            <li>Built frontend and backend components with Angular and .NET Core.</li>
-                            <li>Designed relational databases with PostgreSQL and implemented queries for reporting.</li>
-                            <li>Developed reusable UI components based on client requirements.</li>
-                            <li>CI/CD deployment and version control using GitHub.</li>
-                            </ul>
-                            </p>
-                        </div>
-                        <div class="resume-item">
-                            <h4 style="color: #023047;">System Audit</h4>
-                            <h5>January 2020 - March 2022</h5>
-                            <p><em>COOCIQUE R.L, Costa Rica</em></p>
-                            <p>
-                            <ul>
-                            <li>Created and analyzed SQL queries to support internal audits using Oracle and SQL Server.</li>
-                            <li>Produced audit reports and documentation in compliance with internal regulations.</li>
-                            </ul>
-                            </p>
-                        </div>
-                        <div class="resume-item">
-                            <h4 style="color: #023047;">Quality Assurance Analyst</h4>
-                            <h5>January 2018 - January 2020</h5>
-                            <p><em>AVANTICA TECHNOLOGIES (ENCORA), Costa Rica</em></p>
-                            <p>
-                            <ul>
-                            <li>Designed and executed test plans, reported issues, and maintained test documentation.</li>
-                            <li>Tools: Selenium, JMeter, Testlink, Confluence.</li>
-                            </ul>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-    
-            </div>
-        </section>
-        <!-- Sección Resumen -->
-
-
-        <!--SECCIÓN HABILIDADES-->
-        <div id="skills" class="page-section skills">
-            <div class="container">
-                <!-- Titulo-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Skills</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fa-solid fa-heart-circle-bolt"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>  
-                <div class="row">
-                    <div class="col-md-6 skii-div">
-                        <div class="col-md-6"></div>
-                        <div class="title">
-                            <h2>Technical Skill</h2>
-                        </div>
-                        
-                        <ul type = "square">
-                            <li>
-                                <p style="color: black;"><b>Data & Analysis:</b> SQL, Oracle, PostgreSQL, Microsoft SQL Server, Excel, Python (Pandas, NumPy, Matplotlib, Seaborn), Databricks, Snowflake(Basics)</p>
-                            </li>
-                            <li>
-                                <p style="color: black;"><b>Visualization:</b> Power BI, Excel Dashboards</p>
-                            </li>
-                            <li>
-                                <p style="color: black;"><b>Tools & Platforms:</b> Google colap, Jupyter Notebook, Anaconda, Git, Postman, Jira, Selenium</p>
-                            </li>
-                            <li>
-                                <p style="color: black;"><b>Cloud & Repositories:</b> AWS, Azure, GitHub, BitBucket</p>  
-                            </li>
-                            <li>
-                                <p style="color: black;"><b>Programming:</b> Python, C#, JavaScript, TypeScript.</p>  
-                            </li>
-                            <li>
-                                <p style="color: black;"><b>OS:</b> Windows, Linux.</p>  
-                            </li>
-                        </ul>
-                        
-                    </div>
-                    <div class="col-md-6 skii-div">
-                        <div class="title">
-                            <h2>Soft Skill</h2>
-                        </div>
-                        <ul type = "square">
-                            <li>
-                                <label for="">Analytical thinking focused on problem-solving.</label>
-                            </li>
-                            <li>
-                                <label for="">Effective communication of results to technical and non-technical teams.</label>
-                            </li>
-                            <li>
-                                <label for="">Adaptability to change and continuous learning.</label>
-                            </li>
-                            <li>
-                                <label for="">Efficient time management and deadline compliance.</label>
-                            </li>
-                            <li>
-                                <label for="">Collaboration in cross-functional teams.</label>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>   
-        </div>
-        <!--SECCIÓN HABILIDADES-->
-
-
-
-
-        <!-- SECCIÓN PROYECTOS-->
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Projects</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fa-solid fa-chart-pie"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets\img\portfolio\Sales_analysis.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets\img\portfolio\team_performance_analysis\Team_velocity.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets\img\portfolio\Helth_epidemiology.png" alt="..." />
-                        </div>
-                    </div>
-                    <!--
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets\img\portfolio\campana-publicitaria.png" alt="..." />
-                        </div>
-                    </div>
-                    Portfolio Item 5
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="..." />
-                        </div>
-                    </div>
-                    Portfolio Item 6
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="..." />
-                        </div>
-                    </div>-->
-                </div>
-            </div>
-        </section>
-        <!-- SECCIÓN PROYECTOS-->   
-
-
-     
-        <!-- SECCIÓN PIE DE PÁGINA-->
-        <footer class="page-section footer text-center" id="contact" style="background-color: #023047;">
-            <div class="container">
-                <h2 class="page-section-heading text-center text-uppercase mb-5" style="color: white;">Contact Me</h2>
-
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 py-3">
-                        <div class="info-box">
-                            <h3>Social Profiles</h3>
-                            <br>
-                            
-                            <div class="social-links">
-                            <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/noelia-urp%C3%AD-paniagua-56b08599/"><i class="fa-brands fa-linkedin"></i></i></a>
-                            <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/noeliaurpa"><i class="fa-brands fa-github"></i></i></a>
-                            <a class="btn btn-outline-light btn-social mx-1" href="https://wa.me/89517281"><i class="fa-brands fa-whatsapp"></i></a>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 ">
-                        <div class="info-box">
-                            <i class="fa-sharp fa-solid fa-envelope" style="height: 40px;"></i>
-                            <br>
-                            <br>
-                            <h3>Email Me</h3>
-                            <a class="mail" style="text-decoration: none;" href="mailto:noeurpa1114@gmail.com"> <p>noeurpa1114@gmail.com</p> </a>
-                        </div>
-                    </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <div class="info-box ">
-                            <i class="bx fa-solid fa-phone-volume" style="height: 40px;"></i>
-                            <br>
-                            <br>
-                            <h3>Call Me</h3>
-                            <p>+506 89517281</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </footer>
-        <!-- SECCIÓN PIE DE PÁGINA-->
-
-
-
-        <!-- SECCIÓN COPYRIGHT-->
-        <div class="copyright py-4 text-center text-white" style="background-color: #022435;">
-            <div class="container"><small>Copyright &copy; Noelia Urpi Paniagua 2025</small></div>
-        </div>
-         <!-- SECCIÓN COPYRIGHT-->
-
-
-
-        <!-- MODALES PROYECTOS-->
-        <!-- PROYECTO MODAL 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Sales Analysis</h2>
-                                    <h3>(Snowflake and Power BI)</h3>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fa-solid fa-square-poll-vertical"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets\img\portfolio\Sales_analysis.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Designed and developed a dynamic sales analytics dashboard using Power BI and Snowflake as the cloud data source. 
-                                        The project showcases key sales KPIs, regional performance, product category insights, and customer segmentation</p>
-                                        <div class="text-center mt-4">
-                                            <a class="btn btn-xl btn-outline-dark" target="_blank" href="https://github.com/noeliaurpa/Sales-Dashboard-Using-Snowflake-Power-BI">
-                                                <i class="fa-brands fa-github"></i>
-                                                Go to report! 
-                                            </a>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="wrap hero__grid">
+        <div>
+          <h1 class="hero__name"><span>Noelia</span><span class="hero__last">Urpi Paniagua</span></h1>
+          <p class="hero__role">
+            <span data-l="es">Ingeniera de Datos con base en análisis y machine learning</span>
+            <span data-l="en">Data Engineer with a foundation in analytics and machine learning</span>
+          </p>
+          <p class="hero__intro">
+            <span data-l="es">Lidero el equipo de datos de Quercu. Construyo procesos ETL en Microsoft Fabric con SQL, Python/PySpark y Power Query, y llevo esos datos hasta tableros de Power BI con los que los clientes toman decisiones.</span>
+            <span data-l="en">I lead the data team at Quercu. I build ETL processes in Microsoft Fabric with SQL, Python/PySpark and Power Query, and carry that data all the way to the Power BI dashboards clients use to make decisions.</span>
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" data-l="es" href="assets/cv/Noelia_Urpi_Paniagua_CV_ES.pdf" target="_blank" rel="noopener">
+              <svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M256 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 210.7-41.4-41.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 242.7 256 32zM64 320c-35.3 0-64 28.7-64 64l0 32c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-32c0-35.3-28.7-64-64-64l-46.9 0-56.6 56.6c-31.2 31.2-81.9 31.2-113.1 0L110.9 320 64 320zm304 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg> Descargar CV
+            </a>
+            <a class="btn btn--primary" data-l="en" href="assets/cv/Noelia_Urpi_Paniagua_CV_EN.pdf" target="_blank" rel="noopener">
+              <svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M256 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 210.7-41.4-41.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 242.7 256 32zM64 320c-35.3 0-64 28.7-64 64l0 32c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-32c0-35.3-28.7-64-64-64l-46.9 0-56.6 56.6c-31.2 31.2-81.9 31.2-113.1 0L110.9 320 64 320zm304 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg> Download CV
+            </a>
+            <a class="btn btn--ghost" href="#proyectos"><span data-l="es">Ver proyectos</span><span data-l="en">See projects</span></a>
+          </div>
         </div>
 
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Team performance Analysis</h2>
-                                    <h3>(Google colab)</h3>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fa-solid fa-square-poll-vertical"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" style="height: 250px;" src="assets\img\portfolio\team_performance_analysis\Team_velocity.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">The objective of this project is to analyze and monitor the operational performance of development teams using key software delivery metrics.
-                                        It aims to evaluate team velocity based on the story points completed over the last sprints, as well as adherence to documentation delivery 
-                                        processes related to production deployments. Specifically, it examines whether teams are delivering release notes and SES documents within the 
-                                        established time windows (12 and 24 hours before deployment, respectively), for both Proyect1 and Proyect2 projects.
-                                        This analysis will help identify improvement opportunities in time management and the quality of the continuous delivery process.</p>
-                                        <div class="text-center mt-4">
-                                            <a class="btn btn-xl btn-outline-dark" target="_blank" href="https://github.com/noeliaurpa/Team-performance-analysis">
-                                                <i class="fa-brands fa-github"></i>
-                                                Go to report! 
-                                            </a>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="hero__visual">
+          <div class="arch">
+            <img src="assets/img/Noelia Urpi.png" width="531" height="484"
+                 alt="Noelia Urpi Paniagua" />
+          </div>
+          <svg class="pipeline" viewBox="0 0 420 525" aria-hidden="true">
+            <path class="pipeline__track" d="M-20 370 C 50 370, 70 480, 140 480 C 210 480, 230 370, 300 370 C 370 370, 390 480, 460 480" />
+            <path class="pipeline__flow" d="M-20 370 C 50 370, 70 480, 140 480 C 210 480, 230 370, 300 370 C 370 370, 390 480, 460 480" />
+          </svg>
+          <div class="nodes" aria-hidden="true">
+            <span class="node node--a"><i></i><span data-l="es">Fuentes de datos</span><span data-l="en">Data sources</span></span>
+            <span class="node node--b"><i></i>SQL + PySpark</span>
+            <span class="node node--c"><i></i>Microsoft Fabric</span>
+            <span class="node node--d"><i></i>Power BI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section section--lilac" id="sobre-mi">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="section__title"><span data-l="es">Sobre mí</span><span data-l="en">About me</span></h2>
+        </div>
+        <div class="about">
+          <div class="about__text">
+            <p>
+              <span data-l="es">Empecé en tecnología probando software, pasé por la auditoría de sistemas y el desarrollo full stack, y en cada etapa terminé trabajando con datos.</span>
+              <span data-l="en">I started in tech testing software, moved through systems auditing and full stack development, and at every stage I ended up working with data.</span>
+            </p>
+            <p>
+              <span data-l="es">Hoy me dedico a la ingeniería de datos: integrar fuentes, transformar y validar la información, y dejarla lista para el análisis. Mi experiencia como analista me ayuda a construir pensando en quien va a usar los datos, y mis conocimientos de machine learning me permiten ir más allá del reporte.</span>
+              <span data-l="en">Today I focus on data engineering: integrating sources, transforming and validating information, and getting it ready for analysis. My background as an analyst helps me build with the end user in mind, and my machine learning knowledge lets me go beyond the report.</span>
+            </p>
+            <p>
+              <a class="btn btn--ghost" data-l="es" href="assets/cv/Noelia_Urpi_Paniagua_CV_EN.pdf" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M160 0c17.7 0 32 14.3 32 32l0 32 128 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-9.6 0-8.4 23.1c-16.4 45.2-41.1 86.5-72.2 122 14.2 8.8 29 16.6 44.4 23.5l50.4 22.4 62.2-140c5.1-11.6 16.6-19 29.2-19s24.1 7.4 29.2 19l128 288c7.2 16.2-.1 35.1-16.2 42.2s-35.1-.1-42.2-16.2l-20-45-157.5 0-20 45c-7.2 16.2-26.1 23.4-42.2 16.2s-23.4-26.1-16.2-42.2l39.8-89.5-50.4-22.4c-23-10.2-45-22.4-65.8-36.4-21.3 17.2-44.6 32.2-69.5 44.7L78.3 380.6c-15.8 7.9-35 1.5-42.9-14.3s-1.5-35 14.3-42.9l34.5-17.3c16.3-8.2 31.8-17.7 46.4-28.3-13.8-12.7-26.8-26.4-38.9-40.9L81.6 224.7c-11.3-13.6-9.5-33.8 4.1-45.1s33.8-9.5 45.1 4.1l10.2 12.2c11.5 13.9 24.1 26.8 37.4 38.7 27.5-30.4 49.2-66.1 63.5-105.4l.5-1.2-210.3 0C14.3 128 0 113.7 0 96S14.3 64 32 64l96 0 0-32c0-17.7 14.3-32 32-32zM416 270.8L365.7 384 466.3 384 416 270.8z"/></svg> CV en inglés</a>
+              <a class="btn btn--ghost" data-l="en" href="assets/cv/Noelia_Urpi_Paniagua_CV_ES.pdf" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M160 0c17.7 0 32 14.3 32 32l0 32 128 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-9.6 0-8.4 23.1c-16.4 45.2-41.1 86.5-72.2 122 14.2 8.8 29 16.6 44.4 23.5l50.4 22.4 62.2-140c5.1-11.6 16.6-19 29.2-19s24.1 7.4 29.2 19l128 288c7.2 16.2-.1 35.1-16.2 42.2s-35.1-.1-42.2-16.2l-20-45-157.5 0-20 45c-7.2 16.2-26.1 23.4-42.2 16.2s-23.4-26.1-16.2-42.2l39.8-89.5-50.4-22.4c-23-10.2-45-22.4-65.8-36.4-21.3 17.2-44.6 32.2-69.5 44.7L78.3 380.6c-15.8 7.9-35 1.5-42.9-14.3s-1.5-35 14.3-42.9l34.5-17.3c16.3-8.2 31.8-17.7 46.4-28.3-13.8-12.7-26.8-26.4-38.9-40.9L81.6 224.7c-11.3-13.6-9.5-33.8 4.1-45.1s33.8-9.5 45.1 4.1l10.2 12.2c11.5 13.9 24.1 26.8 37.4 38.7 27.5-30.4 49.2-66.1 63.5-105.4l.5-1.2-210.3 0C14.3 128 0 113.7 0 96S14.3 64 32 64l96 0 0-32c0-17.7 14.3-32 32-32zM416 270.8L365.7 384 466.3 384 416 270.8z"/></svg> Resume in Spanish</a>
+            </p>
+          </div>
+          <dl class="facts">
+            <div><dt><span data-l="es">Rol actual</span><span data-l="en">Current role</span></dt>
+                 <dd><span data-l="es">Analista de Datos y líder del equipo de datos, Quercu</span><span data-l="en">Data Analyst and data team lead, Quercu</span></dd></div>
+            <div><dt><span data-l="es">Experiencia</span><span data-l="en">Experience</span></dt>
+                 <dd><span data-l="es">Más de 8 años en tecnología</span><span data-l="en">8+ years in technology</span></dd></div>
+            <div><dt><span data-l="es">Formación</span><span data-l="en">Education</span></dt>
+                 <dd><span data-l="es">Bachillerato en Ingeniería de Software</span><span data-l="en">B.S. in Software Engineering</span></dd></div>
+            <div><dt><span data-l="es">Ubicación</span><span data-l="en">Location</span></dt>
+                 <dd>Costa Rica</dd></div>
+            <div><dt><span data-l="es">Modalidad</span><span data-l="en">Work mode</span></dt>
+                 <dd><span data-l="es">Remoto</span><span data-l="en">Remote</span></dd></div>
+            <div><dt><span data-l="es">Idiomas</span><span data-l="en">Languages</span></dt>
+                 <dd><span data-l="es">Español (nativo), inglés (conversacional)</span><span data-l="en">Spanish (native), English (conversational)</span></dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experiencia">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="section__title"><span data-l="es">Experiencia</span><span data-l="en">Experience</span></h2>
+        </div>
+        <ol class="timeline">
+          <li class="job job--current">
+            <div class="job__when"><span data-l="es">Julio 2025 – hoy</span><span data-l="en">July 2025 – present</span></div>
+            <div>
+              <h3 class="job__title"><span data-l="es">Analista de Datos</span><span data-l="en">Data Analyst</span><span class="tag"><span data-l="es">Líder del equipo de datos</span><span data-l="en">Data team lead</span></span></h3>
+              <p class="job__org">Quercu</p>
+              <ul data-l="es">
+                <li>Lidero el equipo de datos de la empresa, coordinando el trabajo y las entregas de los proyectos de datos.</li>
+                <li>Construyo y mantengo pipelines ETL en Microsoft Fabric para integrar datos de distintas fuentes y asegurar información consistente y confiable.</li>
+                <li>Desarrollo procesos de extracción, limpieza y transformación con SQL, Python/PySpark y Power Query (Dataflows).</li>
+                <li>Preparo y estructuro los modelos de datos que alimentan los tableros e informes de Power BI.</li>
+                <li>Defino métricas clave y KPIs con los clientes, y diseño tableros interactivos con medidas DAX optimizadas.</li>
+                <li>Doy soporte y mejora continua a los procesos de datos y tableros existentes.</li>
+              </ul>
+              <ul data-l="en">
+                <li>Lead the company's data team, coordinating the team's work and the delivery of data projects.</li>
+                <li>Build and maintain ETL pipelines in Microsoft Fabric to integrate data from multiple sources and ensure consistent, reliable information.</li>
+                <li>Develop extraction, cleansing and transformation processes with SQL, Python/PySpark and Power Query (Dataflows).</li>
+                <li>Prepare and structure the data models that feed Power BI dashboards and reports.</li>
+                <li>Define key metrics and KPIs with clients, and design interactive dashboards with optimized DAX measures.</li>
+                <li>Provide support and continuous improvement for existing data processes and dashboards.</li>
+              </ul>
             </div>
+          </li>
+          <li class="job">
+            <div class="job__when"><span data-l="es">Nov 2022 – Jul 2025</span><span data-l="en">Nov 2022 – Jul 2025</span></div>
+            <div>
+              <h3 class="job__title"><span data-l="es">Analista de Datos / Ingeniera de Software</span><span data-l="en">Data Analyst / Software Engineer</span></h3>
+              <p class="job__org">Consero Global</p>
+              <ul data-l="es">
+                <li>Participé en tareas de integración de datos con Azure y AWS, consumiendo y probando APIs con Postman.</li>
+                <li>Analicé grandes volúmenes de datos con consultas SQL complejas para respaldar las operaciones.</li>
+                <li>Realicé validaciones de calidad de datos y creé llamadas API para manipular información de producción de forma segura.</li>
+                <li>Monitoreé el rendimiento y propuse mejoras en las estructuras de bases de datos.</li>
+              </ul>
+              <ul data-l="en">
+                <li>Contributed to data integration tasks with Azure and AWS, consuming and testing APIs with Postman.</li>
+                <li>Analyzed large volumes of data with complex SQL queries to support operations.</li>
+                <li>Performed data quality validations and built API calls to safely manipulate production data.</li>
+                <li>Monitored performance and proposed improvements to database structures.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="job">
+            <div class="job__when"><span data-l="es">Abr 2022 – Nov 2022</span><span data-l="en">Apr 2022 – Nov 2022</span></div>
+            <div>
+              <h3 class="job__title"><span data-l="es">Desarrolladora Full Stack</span><span data-l="en">Full Stack Developer</span></h3>
+              <p class="job__org">Rally Hope</p>
+              <ul data-l="es">
+                <li>Diseñé bases de datos relacionales en PostgreSQL e implementé consultas para reportes.</li>
+                <li>Implementé despliegues CI/CD y control de versiones con GitHub.</li>
+                <li>Construí componentes frontend y backend reutilizables con Angular y .NET Core.</li>
+              </ul>
+              <ul data-l="en">
+                <li>Designed relational databases in PostgreSQL and implemented queries for reporting.</li>
+                <li>Implemented CI/CD deployments and version control with GitHub.</li>
+                <li>Built reusable frontend and backend components with Angular and .NET Core.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="job">
+            <div class="job__when"><span data-l="es">Ene 2020 – Mar 2022</span><span data-l="en">Jan 2020 – Mar 2022</span></div>
+            <div>
+              <h3 class="job__title"><span data-l="es">Auditora de Sistemas</span><span data-l="en">Systems Auditor</span></h3>
+              <p class="job__org">COOCIQUE R.L.</p>
+              <ul data-l="es">
+                <li>Creé y analicé consultas SQL en Oracle y SQL Server para apoyar auditorías internas.</li>
+                <li>Generé reportes de auditoría y documentación conforme a regulaciones internas.</li>
+              </ul>
+              <ul data-l="en">
+                <li>Wrote and analyzed SQL queries in Oracle and SQL Server to support internal audits.</li>
+                <li>Produced audit reports and documentation in compliance with internal regulations.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="job">
+            <div class="job__when"><span data-l="es">Ene 2018 – Ene 2020</span><span data-l="en">Jan 2018 – Jan 2020</span></div>
+            <div>
+              <h3 class="job__title"><span data-l="es">Analista de Aseguramiento de la Calidad</span><span data-l="en">Quality Assurance Analyst</span></h3>
+              <p class="job__org">Avantica Technologies (Encora)</p>
+              <ul data-l="es">
+                <li>Diseñé y ejecuté planes de prueba, reporté incidencias y mantuve la documentación de pruebas (Selenium, JMeter, TestLink, Confluence).</li>
+              </ul>
+              <ul data-l="en">
+                <li>Designed and executed test plans, reported defects and maintained test documentation (Selenium, JMeter, TestLink, Confluence).</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section--lilac" id="proyectos">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="section__title"><span data-l="es">Proyectos</span><span data-l="en">Projects</span></h2>
+          <p class="section__lead">
+            <span data-l="es">Dashboards que diseñé y modelé de punta a punta. Los del trabajo están recreados con datos ficticios para proteger la información de los clientes. Haz clic en una imagen para verla completa.</span><span data-l="en">Dashboards I designed and modeled end to end. Work projects are recreated with fictional data to protect client information. Click an image to see it in full.</span>
+          </p>
         </div>
 
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Helth epidemiology analysis</h2>
-                                    <h3>(Google colab and Power BI)</h3>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fa-solid fa-square-poll-vertical"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets\img\portfolio\Helth_epidemiology.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">This analysis focused on applying clustering techniques to segment a population based on health-related variables such as age, 
-                                        smoking habits, and chronic diseases. During the process, it became evident that traditional visualizations did not clearly reveal group structures. 
-                                        Therefore, dimensionality reduction techniques like t-SNE and interactive 3D visualizations with Plotly were used. The K-Means algorithm proved to be 
-                                        the most suitable model, successfully forming well-defined and interpretable clusters. The results showed patterns consistent with real-world trends, 
-                                        highlighting the potential of this type of analysis to support decision-making in areas such as public health and personalized medicine.</p>
-                                        <div class="text-center mt-4">
-                                            <a class="btn btn-xl btn-outline-dark" target="_blank" href="https://github.com/noeliaurpa/helth_epidemiology/tree/main ">
-                                                <i class="fa-brands fa-github"></i>
-                                                Go to report! 
-                                            </a>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <h3 class="group-title"><span data-l="es">Trabajo profesional</span><span data-l="en">Professional work</span></h3>
+        <div class="cards">
+            <article class="card">
+              <button class="shot" type="button" data-full="assets/img/portfolio/work/producto-no-conforme.webp" data-label-es="Ver imagen completa" data-label-en="See full image" aria-label="Ver imagen completa">
+                <img src="assets/img/portfolio/work/producto-no-conforme-preview.webp" width="1180" height="920" loading="lazy"
+                     alt="Producto no conforme: qué está retenido, por qué y desde cuándo" data-alt-es="Producto no conforme: qué está retenido, por qué y desde cuándo" data-alt-en="Non-conforming product: what is on hold, why and since when" />
+              </button>
+              <div class="card__body">
+                <p class="project__kind"><span data-l="es">Calidad, industria alimentaria</span><span data-l="en">Quality, food industry</span></p>
+                <h4 class="project__title"><span data-l="es">Producto no conforme: qué está retenido, por qué y desde cuándo</span><span data-l="en">Non-conforming product: what is on hold, why and since when</span></h4>
+                <p><span data-l="es">Retenciones por motivo y antigüedad, entradas y liberaciones por corte, inspección de calidad y productos reincidentes. Cada lote abre su historia completa, corte a corte, con costo de almacenaje.</span><span data-l="en">Holds by reason and age, inflows and releases per period, quality inspection and repeat offenders. Each lot opens its full history, period by period, with storage cost.</span></p>
+                <ul class="chips"><li>Power BI</li><li>DAX</li><li>JD Edwards</li><li>Microsoft Fabric</li><li>Drill through</li></ul>
+              </div>
+            </article>
+            <article class="card">
+              <button class="shot" type="button" data-full="assets/img/portfolio/work/finanzas-rent-a-car.webp" data-label-es="Ver imagen completa" data-label-en="See full image" aria-label="Ver imagen completa">
+                <img src="assets/img/portfolio/work/finanzas-rent-a-car-preview.webp" width="1180" height="920" loading="lazy"
+                     alt="Presupuesto, cartera y caja en una sola lectura" data-alt-es="Presupuesto, cartera y caja en una sola lectura" data-alt-en="Budget, receivables and cash in a single view" />
+              </button>
+              <div class="card__body">
+                <p class="project__kind"><span data-l="es">Finanzas, movilidad y alquiler de vehículos</span><span data-l="en">Finance, mobility and vehicle rental</span></p>
+                <h4 class="project__title"><span data-l="es">Presupuesto, cartera y caja en una sola lectura</span><span data-l="en">Budget, receivables and cash in a single view</span></h4>
+                <p><span data-l="es">Ejecución presupuestaria por centro de costo, desviaciones por cuenta, antigüedad de saldos, morosidad, días de cobro y proyección de caja a 30 días. Cada visual cierra con una frase que dice qué significa.</span><span data-l="en">Budget execution by cost center, variances by account, receivables aging, delinquency, collection days and a 30-day cash projection. Every visual ends with a sentence that says what it means.</span></p>
+                <ul class="chips"><li>Power BI</li><li>DAX</li><li>Microsoft Fabric</li><li>Storytelling</li><li>USD / CRC</li></ul>
+              </div>
+            </article>
+            <article class="card">
+              <button class="shot" type="button" data-full="assets/img/portfolio/work/inventario.webp" data-label-es="Ver imagen completa" data-label-en="See full image" aria-label="Ver imagen completa">
+                <img src="assets/img/portfolio/work/inventario-preview.webp" width="1180" height="920" loading="lazy"
+                     alt="Inventario de punta a punta, del valor al producto" data-alt-es="Inventario de punta a punta, del valor al producto" data-alt-en="End-to-end inventory, from value to product" />
+              </button>
+              <div class="card__body">
+                <p class="project__kind"><span data-l="es">Inventario, industria alimentaria</span><span data-l="en">Inventory, food industry</span></p>
+                <h4 class="project__title"><span data-l="es">Inventario de punta a punta, del valor al producto</span><span data-l="en">End-to-end inventory, from value to product</span></h4>
+                <p><span data-l="es">Seis indicadores de cabecera, función de bodega, comparación interanual, estados de lote, caducidad y trazabilidad. Cada barra abre el detalle de productos con un total que cuadra.</span><span data-l="en">Six headline indicators, warehouse function, year-over-year comparison, lot status, expiry and traceability. Every bar drills into product detail with a total that reconciles.</span></p>
+                <ul class="chips"><li>Power BI</li><li>DAX</li><li>Microsoft Fabric</li><li>Direct Lake</li><li>SQL</li><li>Drill through</li></ul>
+              </div>
+            </article>
+            <article class="card">
+              <button class="shot" type="button" data-full="assets/img/portfolio/work/plan-de-vuelo.webp" data-label-es="Ver imagen completa" data-label-en="See full image" aria-label="Ver imagen completa">
+                <img src="assets/img/portfolio/work/plan-de-vuelo-preview.webp" width="1180" height="920" loading="lazy"
+                     alt="Plan de Vuelo: metas contra resultados, mes a mes" data-alt-es="Plan de Vuelo: metas contra resultados, mes a mes" data-alt-en="Flight Plan: targets vs. results, month by month" />
+              </button>
+              <div class="card__body">
+                <p class="project__kind"><span data-l="es">Transformación digital, cuadro de mando</span><span data-l="en">Digital transformation, scorecard</span></p>
+                <h4 class="project__title"><span data-l="es">Plan de Vuelo: metas contra resultados, mes a mes</span><span data-l="en">Flight Plan: targets vs. results, month by month</span></h4>
+                <p><span data-l="es">Cumplimiento de KPI corporativos y operativos por dirección y objetivo estratégico, con seguimiento individual, línea de meta y comentarios del responsable. Bilingüe español / inglés.</span><span data-l="en">Corporate and operational KPI attainment by department and strategic objective, with individual tracking, target line and owner comments. Bilingual Spanish / English.</span></p>
+                <ul class="chips"><li>Power BI</li><li>DAX</li><li>SharePoint</li><li><span data-l="es">Parámetros de campo</span><span data-l="en">Field parameters</span></li><li><span data-l="es">Bilingüe</span><span data-l="en">Bilingual</span></li></ul>
+              </div>
+            </article>
         </div>
 
-        <!-- Portfolio Modal 4
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    Portfolio Modal - Title
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Advertisement</h2>
-                                    Icon Divider
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fa-solid fa-square-poll-vertical"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    Portfolio Modal - Image
-                                    <img class="img-fluid rounded mb-5" src="assets\img\portfolio\campana-publicitaria.png" alt="..." />
-                                    Portfolio Modal - Text
-                                    <p class="mb-4">The objective of this project is to develop a machine learning model capable of predicting whether a user will 
-                                        click on an online advertisement, using a dataset that reflects consumer interaction with various digital ad campaigns. 
-                                        By analyzing variables such as age, income, time spent on the website, and click history, the goal is to identify the key 
-                                        factors that influence user decisions and assess the overall effectiveness of online advertising strategies based on observed behavior.</p>
-                                        <button class="btn btn-info">
-                                        <a href=""><i class="fa-solid fa-chart-simple" style="height: 30px;color:rgb(0, 0, 0)"></i></a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <h3 class="group-title"><span data-l="es">Proyectos personales</span><span data-l="en">Personal projects</span></h3>
+        <div class="cards">
+            <article class="card">
+              <button class="shot shot--light" type="button" data-label-es="Ver imagen completa" data-label-en="See full image" aria-label="Ver imagen completa">
+                <img src="assets/img/portfolio/Sales_analysis.png" width="1272" height="712" loading="lazy" alt="Análisis de ventas con datos en la nube" data-alt-es="Análisis de ventas con datos en la nube" data-alt-en="Cloud sales analytics" />
+              </button>
+              <div class="card__body">
+                <p class="project__kind"><span data-l="es">Proyecto personal</span><span data-l="en">Personal project</span></p>
+                <h4 class="project__title"><span data-l="es">Análisis de ventas con datos en la nube</span><span data-l="en">Cloud sales analytics</span></h4>
+                <p><span data-l="es">Tablero de ventas conectado a Snowflake como fuente de datos en la nube: KPIs de ventas, desempeño por región, categorías de producto y segmentación de clientes.</span><span data-l="en">Sales dashboard connected to Snowflake as its cloud data source: sales KPIs, regional performance, product categories and customer segmentation.</span></p>
+                <ul class="chips"><li>Snowflake</li><li>Power BI</li><li>DAX</li></ul>
+                <a class="btn btn--ghost" href="https://github.com/noeliaurpa/Sales-Dashboard-Using-Snowflake-Power-BI" target="_blank" rel="noopener">
+                  <svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z"/></svg><span data-l="es">Ver en GitHub</span><span data-l="en">View on GitHub</span>
+                </a>
+              </div>
+            </article>
+            <article class="card">
+              <button class="shot shot--light" type="button" data-label-es="Ver imagen completa" data-label-en="See full image" aria-label="Ver imagen completa">
+                <img src="assets/img/portfolio/team_performance_analysis/Team_velocity.png" width="1190" height="590" loading="lazy" alt="Desempeño de equipos de desarrollo" data-alt-es="Desempeño de equipos de desarrollo" data-alt-en="Development team performance" />
+              </button>
+              <div class="card__body">
+                <p class="project__kind"><span data-l="es">Proyecto personal</span><span data-l="en">Personal project</span></p>
+                <h4 class="project__title"><span data-l="es">Desempeño de equipos de desarrollo</span><span data-l="en">Development team performance</span></h4>
+                <p><span data-l="es">Mide la velocidad de los equipos a partir de los story points de los últimos sprints y revisa si las release notes y los documentos se entregan a tiempo antes de cada despliegue.</span><span data-l="en">Measures team velocity from story points over recent sprints and checks whether release notes and documents are delivered on time before each deployment.</span></p>
+                <ul class="chips"><li>Python</li><li>Google Colab</li></ul>
+                <a class="btn btn--ghost" href="https://github.com/noeliaurpa/Team-performance-analysis" target="_blank" rel="noopener">
+                  <svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z"/></svg><span data-l="es">Ver en GitHub</span><span data-l="en">View on GitHub</span>
+                </a>
+              </div>
+            </article>
         </div>
+      </div>
+    </section>
 
-        Portfolio Modal 5
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    Portfolio Modal - Title
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
-                                    Icon Divider
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    Portfolio Modal - Image
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
-                                    Portfolio Modal - Text
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-outline-primary">
-                                        <a href=""><i class="fa-brands fa-github" style="height: 30px;color:rgb(0, 0, 0)"></i></a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="habilidades">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="section__title"><span data-l="es">Habilidades</span><span data-l="en">Skills</span></h2>
+          <p class="section__lead">
+            <span data-l="es">Organizadas según el recorrido de los datos: dónde viven, cómo se transforman y cómo se convierten en decisiones.</span>
+            <span data-l="en">Organized along the data's journey: where it lives, how it is transformed and how it becomes decisions.</span>
+          </p>
         </div>
+        <ul class="stages">
+          <li class="stage">
+            <span class="stage__dot" aria-hidden="true"></span>
+            <h3><span data-l="es">Bases de datos</span><span data-l="en">Databases</span></h3>
+            <p><span data-l="es">Donde viven los datos</span><span data-l="en">Where the data lives</span></p>
+            <ul class="chips"><li>SQL</li><li>Oracle</li><li>SQL Server</li><li>MySQL</li><li>PostgreSQL</li><li>Snowflake</li></ul>
+          </li>
+          <li class="stage">
+            <span class="stage__dot" aria-hidden="true"></span>
+            <h3><span data-l="es">Ingesta y transformación</span><span data-l="en">Ingestion &amp; transformation</span></h3>
+            <p><span data-l="es">Cómo llegan, se limpian y se validan</span><span data-l="en">How it arrives, gets cleaned and validated</span></p>
+            <ul class="chips"><li>Microsoft Fabric</li><li><span data-l="es">Procesos ETL</span><span data-l="en">ETL processes</span></li><li>Power Query</li><li>Dataflows</li><li><span data-l="es">Calidad de datos</span><span data-l="en">Data quality</span></li></ul>
+          </li>
+          <li class="stage">
+            <span class="stage__dot" aria-hidden="true"></span>
+            <h3>Big Data</h3>
+            <p><span data-l="es">Procesamiento distribuido</span><span data-l="en">Distributed processing</span></p>
+            <ul class="chips"><li>Apache Spark</li><li>PySpark</li><li>Databricks</li></ul>
+          </li>
+          <li class="stage">
+            <span class="stage__dot" aria-hidden="true"></span>
+            <h3><span data-l="es">Análisis y visualización</span><span data-l="en">Analytics &amp; visualization</span></h3>
+            <p><span data-l="es">Cómo se convierten en decisiones</span><span data-l="en">How it becomes decisions</span></p>
+            <ul class="chips"><li>Power BI</li><li>DAX</li><li>Excel</li><li>Matplotlib</li><li>Seaborn</li><li>Plotly</li></ul>
+          </li>
+          <li class="stage">
+            <span class="stage__dot" aria-hidden="true"></span>
+            <h3>Machine Learning</h3>
+            <p><span data-l="es">Patrones que no se ven a simple vista</span><span data-l="en">Patterns you can't see at a glance</span></p>
+            <ul class="chips"><li>scikit-learn</li><li>K-Means</li><li>t-SNE</li><li>Clustering</li></ul>
+          </li>
+          <li class="stage">
+            <span class="stage__dot" aria-hidden="true"></span>
+            <h3><span data-l="es">Lenguajes</span><span data-l="en">Languages</span></h3>
+            <p><span data-l="es">Para construir y automatizar</span><span data-l="en">To build and automate</span></p>
+            <ul class="chips"><li>Python</li><li>Pandas</li><li>NumPy</li><li>SQL</li><li>C#</li><li>JavaScript</li><li>TypeScript</li></ul>
+          </li>
+          <li class="stage stage--wide">
+            <span class="stage__dot" aria-hidden="true"></span>
+            <h3><span data-l="es">Nube y herramientas</span><span data-l="en">Cloud &amp; tools</span></h3>
+            <p><span data-l="es">El entorno donde trabajo cada día</span><span data-l="en">The environment I work in every day</span></p>
+            <ul class="chips"><li>Azure</li><li>AWS</li><li>Git</li><li>GitHub</li><li>Bitbucket</li><li>CI/CD</li><li>Jupyter</li><li>Google Colab</li><li>Postman</li><li>Jira</li><li>Claude</li><li>Claude Code</li><li>Copilot</li><li>Linux</li></ul>
+          </li>
+        </ul>
+        <div class="soft">
+          <h3><span data-l="es">Además</span><span data-l="en">Also</span></h3>
+          <p>
+            <span data-l="es">Liderazgo de equipos, comunicación de resultados a públicos técnicos y de negocio, pensamiento analítico, manejo del tiempo y aprendizaje continuo.</span>
+            <span data-l="en">Team leadership, communicating results to technical and business audiences, analytical thinking, time management and continuous learning.</span>
+          </p>
+        </div>
+      </div>
+    </section>
 
-        Portfolio Modal 6
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    Portfolio Modal - Title
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
-                                    Icon Divider
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    Portfolio Modal - Image
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." />
-                                    Portfolio Modal - Text
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-outline-primary">
-                                        <a href=""><i class="fa-brands fa-github" style="height: 30px;color:rgb(0, 0, 0)"></i></a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>-->
+    <!-- ============ EDUCATION & CERTIFICATIONS ============ -->
+    <section class="section section--lilac" id="formacion">
+      <div class="wrap learn">
+        <div>
+          <h3><span data-l="es">Educación</span><span data-l="en">Education</span></h3>
+          <ul class="list">
+            <li><strong><span data-l="es">Bachillerato en Ingeniería de Software</span><span data-l="en">Bachelor's Degree in Software Engineering</span></strong><span class="src">Universidad Técnica Nacional</span></li>
+            <li><strong><span data-l="es">Bachillerato en Educación Técnica</span><span data-l="en">Bachelor's Degree in Technical Education</span></strong><span class="src">Centro de Formación Pedagógica y Tecnología Educativa</span></li>
+            <li><strong><span data-l="es">Técnico en Telemática y Redes</span><span data-l="en">Technician in Telematics and Networks</span></strong><span class="src">Cenfotec University</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3><span data-l="es">Certificaciones y cursos</span><span data-l="en">Certifications &amp; courses</span></h3>
+          <ul class="list">
+            <li><strong><span data-l="es">Microsoft Fabric para Análisis e Ingeniería de Datos</span><span data-l="en">Microsoft Fabric for Data Analytics and Engineering</span><span class="badge"><span data-l="es">En curso desde oct. 2026</span><span data-l="en">In progress since Oct 2026</span></span></strong><span class="src">Grow Up School, Costa Rica</span></li>
+            <li><strong><span data-l="es">Máster en Azure Databricks &amp; Spark para Ingenieros de Datos</span><span data-l="en">Azure Databricks &amp; Spark for Data Engineers (Master)</span></strong><span class="src">Udemy</span></li>
+            <li><strong><span data-l="es">Databricks y Apache Spark para Big Data: de cero a experto</span><span data-l="en">Databricks and Apache Spark for Big Data: Zero to Expert</span></strong><span class="src">Udemy</span></li>
+            <li><strong><span data-l="es">Snowflake Master: Data Warehouse en la nube</span><span data-l="en">Snowflake Master: Cloud Data Warehouse</span></strong><span class="src">Udemy</span></li>
+            <li><strong><span data-l="es">Python para Ciencia de Datos y Machine Learning</span><span data-l="en">Python for Data Science and Machine Learning</span></strong><span class="src">Grow Up School, Costa Rica</span></li>
+            <li><strong><span data-l="es">Curso completo de Power BI: análisis profesional de datos</span><span data-l="en">Complete Power BI Course: Professional Data Analysis</span></strong><span class="src">Udemy</span></li>
+            <li><strong><span data-l="es">Tableau de la A a la Z</span><span data-l="en">Tableau A to Z</span></strong><span class="src">Udemy</span></li>
+            <li><strong><span data-l="es">Inglés empresarial (conversacional)</span><span data-l="en">Business English (conversational)</span></strong><span class="src">American English for Business</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <!-- ============ CONTACT ============ -->
+  <footer class="contact" id="contacto">
+    <div class="wrap">
+      <h2 class="contact__title"><span data-l="es">Hablemos de datos.</span><span data-l="en">Let's talk data.</span></h2>
+      <p class="contact__lead">
+        <span data-l="es">Si tu equipo necesita a alguien que construya la infraestructura de datos y entienda a quien la usa, escríbeme.</span>
+        <span data-l="en">If your team needs someone who builds the data infrastructure and understands the people who use it, get in touch.</span>
+      </p>
+      <a class="contact__mail" href="mailto:noeurpa1114@gmail.com">noeurpa1114@gmail.com</a>
+      <ul class="socials">
+        <li><a href="https://www.linkedin.com/in/noelia-urp%C3%AD-paniagua-56b08599/" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32L31.9 32C14.3 32 0 46.5 0 64.3L0 447.7C0 465.5 14.3 480 31.9 480L416 480c17.6 0 32-14.5 32-32.3l0-383.4C448 46.5 433.6 32 416 32zM135.4 416l-66.4 0 0-213.8 66.5 0 0 213.8-.1 0zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77zM384.3 416l-66.4 0 0-104c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9l0 105.8-66.4 0 0-213.8 63.7 0 0 29.2 .9 0c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9l0 117.2z"/></svg>LinkedIn</a></li>
+        <li><a href="https://github.com/noeliaurpa" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z"/></svg>GitHub</a></li>
+        <li><a href="https://wa.me/50689517281" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1c-41.9-42-97.7-65.1-157-65.1-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480 117.7 449.1c32.4 17.7 68.9 27 106.1 27l.1 0c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1s56.2 81.2 56.1 130.5c0 101.8-84.9 184.6-186.6 184.6zM325.1 300.5c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8s-14.3 18-17.6 21.8c-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7s-12.5-30.1-17.1-41.2c-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2s-9.7 1.4-14.8 6.9c-5.1 5.6-19.4 19-19.4 46.3s19.9 53.7 22.6 57.4c2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4s4.6-24.1 3.2-26.4c-1.3-2.5-5-3.9-10.5-6.6z"/></svg>WhatsApp</a></li>
+        <li><a href="tel:+50689517281"><svg class="ico" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M160.2 25C152.3 6.1 131.7-3.9 112.1 1.4l-5.5 1.5c-64.6 17.6-119.8 80.2-103.7 156.4 37.1 175 174.8 312.7 349.8 349.8 76.3 16.2 138.8-39.1 156.4-103.7l1.5-5.5c5.4-19.7-4.7-40.3-23.5-48.1l-97.3-40.5c-16.5-6.9-35.6-2.1-47 11.8l-38.6 47.2C233.9 335.4 177.3 277 144.8 205.3L189 169.3c13.9-11.3 18.6-30.4 11.8-47L160.2 25z"/></svg>+506 8951 7281</a></li>
+      </ul>
+      <p class="foot">© <span id="year">2026</span> Noelia Urpi Paniagua</p>
+    </div>
+  </footer>
 
-      
+  <dialog class="lightbox" aria-label="Imagen ampliada">
+    <button class="lightbox__close" type="button"><span data-l="es">Cerrar</span><span data-l="en">Close</span></button>
+    <img src="" alt="" />
+  </dialog>
 
-        <!--LIBRERIAS Y SCRIPTS REQUERIDOS-->
-
-
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        
-        
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="lib/typed/typed.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/main.js"></script>
-        <script src="js/scripts.js"></script>
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-
-    </body>
+  <script src="js/site.js"></script>
+</body>
 </html>
