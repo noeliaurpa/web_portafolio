@@ -19,8 +19,8 @@
       el.setAttribute("aria-label", el.getAttribute("data-label-" + lang));
     });
     document.title = lang === "es"
-      ? "Noelia Urpi Paniagua | Ingeniera de Datos"
-      : "Noelia Urpi Paniagua | Data Engineer";
+      ? "Noelia Urpí Paniagua | Ingeniera de Datos"
+      : "Noelia Urpí Paniagua | Data Engineer";
     store("lang", lang);
   }
   var saved = store("lang");
@@ -58,6 +58,34 @@
   });
   box.querySelector(".lightbox__close").addEventListener("click", function () { box.close(); });
   box.addEventListener("click", function (e) { if (e.target === box) box.close(); });
+
+  /* ---------- scroll reveal ---------- */
+  var groups = [
+    ".section__head", ".about__text", ".facts", ".group-title", ".soft",
+    ".job", ".card", ".stage", ".learn .list li", ".learn h3",
+    ".contact__title", ".contact__lead", ".contact__mail", ".socials li"
+  ];
+  var targets = [];
+  groups.forEach(function (sel) {
+    document.querySelectorAll(sel).forEach(function (el) {
+      var i = Array.prototype.indexOf.call(el.parentNode.children, el);
+      el.style.setProperty("--d", Math.min(i, 5) * 90 + "ms");
+      el.classList.add("reveal");
+      targets.push(el);
+    });
+  });
+  var timeline = document.querySelector(".timeline");
+  if (timeline) targets.push(timeline);
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); }
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+    targets.forEach(function (el) { io.observe(el); });
+  } else {
+    targets.forEach(function (el) { el.classList.add("is-in"); });
+  }
 
   document.getElementById("year").textContent = new Date().getFullYear();
 })();
